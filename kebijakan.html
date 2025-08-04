@@ -2,9 +2,9 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kebijakan – 4 Elemen</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 40px;
@@ -14,17 +14,11 @@
       text-align: left;
     }
 
-    header {
-      color: black;
-      text-align: center;
-      padding: 15px;
-      border-radius: 6px;
-    }
-
-    nav.navbar {
+    .navbar {
       background-color: #f8f8f8;
       padding: 10px 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
     }
 
     .nav-menu {
@@ -51,40 +45,36 @@
 
     .icon-container {
       text-align: center;
-      margin-top: 30px;
+      margin: 30px 0 10px;
     }
 
     .icon-container img {
       cursor: pointer;
       transition: transform 0.2s ease;
+      width: 100px;
     }
 
     .icon-container img:hover {
       transform: scale(1.05);
     }
 
-    main {
-      margin-top: 40px;
-    }
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 15px;
+    .content {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     footer {
       background-color: #f8f8f8;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
       color: black;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
+      border-radius: 6px;
       font-family: 'Lora', serif;
-      margin-top: 60px;
     }
   </style>
 </head>
@@ -98,33 +88,34 @@
     <ul class="nav-menu">
       <li><a href="index.html">Beranda</a></li>
       <li><a href="cerita.html">Cerita</a></li>
-      <li><a href="tentang.html">Tentang</a></li>
       <li><a href="submit.html">Kirim Cerita</a></li>
-      <li><a href="kebijakan.html">Kebijakan</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
     </ul>
   </nav>
 
-  <header>
-    <h1>Kebijakan Situs</h1>
-    <p>Transparansi dan perlindungan pengguna adalah prioritas kami</p>
-  </header>
-
-  <main>
-    <h2>1. Privasi Pengguna</h2>
-    <p>Kami tidak mengumpulkan data pribadi tanpa persetujuan. Data yang dikirim melalui formulir cerita akan digunakan hanya untuk keperluan kurasi dan tidak akan dibagikan kepada pihak ketiga.</p>
-
-    <h2>2. Hak Cipta</h2>
-    <p>Seluruh konten yang diunggah oleh pengguna akan tetap menjadi milik pengunggah. Namun, kami berhak menampilkan dan mempublikasikan cerita tersebut di situs 4 Elemen dengan atribusi yang sesuai.</p>
-
-    <h2>3. Konten yang Dilarang</h2>
-    <p>Konten yang mengandung kekerasan, diskriminasi, ujaran kebencian, atau informasi palsu tidak akan ditayangkan. Kami berhak menghapus cerita yang melanggar pedoman ini.</p>
-
-    <h2>4. Perubahan Kebijakan</h2>
-    <p>Kami dapat memperbarui kebijakan ini sewaktu-waktu. Perubahan akan diumumkan melalui halaman ini.</p>
-  </main>
+  <div class="content">
+    <h2>Kebijakan Privasi</h2>
+    <p>
+      Kami menghargai privasi Anda. Cerita dan data yang Anda kirimkan melalui situs ini tidak akan dibagikan kepada pihak ketiga tanpa izin.
+      Informasi seperti nama, email, dan cerita Anda hanya digunakan untuk keperluan kurasi konten dan tidak akan digunakan untuk keperluan komersial.
+    </p>
+    <p>
+      Dengan mengirimkan cerita, Anda memberikan izin kepada tim 4 Elemen untuk menampilkan cerita Anda secara publik, dengan atau tanpa nama sesuai persetujuan Anda.
+    </p>
+    <p>
+      Jika Anda memiliki pertanyaan lebih lanjut mengenai kebijakan kami, silakan hubungi kami melalui halaman <a href="kontak.html">Kontak</a>.
+    </p>
+  </div>
 
   <footer>
-    <p>&copy; 2025 4 Elemen – Cerita untuk Semua</p>
+    <div class="footer-links" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 10px;">
+        <a href="tentang.html" style="color: rgb(11, 11, 11); text-decoration: underline;">Tentang</a>
+        <a href="kontak.html" style="color: rgb(11, 11, 11); text-decoration: underline;">Kontak</a>
+        <a href="https://instagram.com/yourusername" target="_blank" style="color: rgb(11, 11, 11); text-decoration: underline;">Instagram</a>
+        <a href="https://youtube.com/yourchannel" target="_blank" style="color: rgb(11, 11, 11); text-decoration: underline;">YouTube</a>
+        <a href="kebijakan.html" style="color: rgb(11, 11, 11); text-decoration: underline;">Kebijakan</a>
+    </div>
+    <p style="color:rgb(11, 11, 11);">&copy; 2025 4 Elemen – Cerita untuk Semua</p>
   </footer>
 
 </body>
