@@ -24,255 +24,239 @@
         <style type="text/css">
             /* Format All */
             body {
-            margin: 40px; /* jarak luar seluruh halaman */
-            padding: 0;
-            font-family: 'Lora', serif;
-            background-color: #f8f8f8; /* offwhite */
+                margin: 40px;
+                padding: 0;
+                font-family: 'Lora', serif;
+                background-color: #f8f8f8;
             }
 
             /* Header */
             #main-header {
-            text-align: center;
-            color: rgb(5, 5, 5);
-            padding: 10px;
+                text-align: center;
+                color: rgb(5, 5, 5);
+                padding: 10px;
             }
 
             /* Footer */
             #main-footer {
-            text-align: center;
-            font-size: 18px;
-            color: rgb(11, 11, 11);
-            padding: 10px;
+                text-align: center;
+                font-size: 18px;
+                color: rgb(11, 11, 11);
+                padding: 10px;
             }
 
             .footer-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
             }
 
             .footer-links a {
-            color: rgb(11, 11, 11);
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
+                color: rgb(11, 11, 11);
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
             }
 
             .footer-links a:hover {
-            color: #0e0e0e;
+                color: #0e0e0e;
             }
 
             /* Navigation Bar */
             .navbar {
-            background-color: #f8f8f8; /* warna latar belakang */
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                background-color: #f8f8f8;
+                padding: 10px 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             }
 
             .nav-menu {
-            list-style: none;
-            display: flex;
-            justify-content: center; /* rata tengah */
-            gap: 20px; /* jarak antar menu */
-            margin: 0;
-            padding: 0;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin: 0;
+                padding: 0;
             }
 
             .nav-menu li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 8px 12px;
-            transition: background-color 0.3s ease;
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                padding: 8px 12px;
+                transition: background-color 0.3s ease;
             }
 
             .nav-menu li a:hover {
-            background-color: #ddd;
-            border-radius: 4px;
+                background-color: #ddd;
+                border-radius: 4px;
             }
 
             /* Logo */
             .icon-container {
-            text-align: center;
-            margin-top: 30px; /* opsional, untuk spasi dari atas */
+                text-align: center;
+                margin-top: 30px;
             }
 
             .icon-container img {
-            cursor: pointer;
-            transition: transform 0.2s ease;
+                cursor: pointer;
+                transition: transform 0.2s ease;
             }
 
             .icon-container img:hover {
-            transform: scale(1.05); /* efek zoom saat hover */
+                transform: scale(1.05);
             }
 
             /* Hero Section */
             #hero {
-            width: 100%;
-            background-color: #eaeaea;
-            text-align: center;
-            padding: 40px 20px;
-            position: relative;
+                width: 100%;
+                background-color: #eaeaea;
+                text-align: center;
+                padding: 40px 20px;
+                position: relative;
             }
 
             #hero img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
             }
 
             .hero-content {
-            margin-top: 20px;
+                margin-top: 20px;
             }
 
             .hero-content h1 {
-            font-size: 32px;
-            font-family: 'Lora', serif;
-            margin-bottom: 10px;
+                font-size: 32px;
+                font-family: 'Lora', serif;
+                margin-bottom: 10px;
             }
 
             .btn-hero {
-            display: inline-block;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+                display: inline-block;
+                background-color: #333;
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                font-weight: bold;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
             }
 
             .btn-hero:hover {
-            background-color: #555;
+                background-color: #555;
             }
 
             /* Artikel Lainnya */
             #artikel-lainnya {
-            padding: 40px 20px;
-            display: grid;
-            gap: 30px;
+                padding: 40px 20px;
+                display: grid;
+                gap: 30px;
             }
 
             #artikel-lainnya article {
-            background-color: white;
-            padding: 20px;
-            border-left: 5px solid #ccc;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                background-color: white;
+                padding: 20px;
+                border-left: 5px solid #ccc;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             }
 
             #artikel-lainnya h3 {
-            margin-top: 0;
-            font-family: 'Lora', serif;
+                margin-top: 0;
+                font-family: 'Lora', serif;
             }
 
             /* Kategori Grid */
             .kategori-post-grid {
-            margin-top: 2em;
+                margin-top: 2em;
             }
 
             .kategori-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
             }
 
             .tag-grid {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-            background-color: #f5f5f5;
-            border-radius: 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: background-color 0.3s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                background-color: #f5f5f5;
+                border-radius: 10px;
+                text-decoration: none;
+                color: #333;
+                font-weight: 500;
+                transition: background-color 0.3s;
             }
 
             .tag-grid:hover {
-            background-color: #e0e0e0;
+                background-color: #e0e0e0;
             }
 
             /* Feed/CMS */
             #feed-cerita {
-            padding: 40px 20px;
-            background-color: #fff;
-            max-width: 900px;
-            margin: 0 auto;
-            font-family: 'Lora', serif;
+                padding: 40px 20px;
+                background-color: #fff;
+                max-width: 900px;
+                margin: 0 auto;
+                font-family: 'Lora', serif;
             }
 
             #feed-cerita h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 28px;
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 28px;
             }
 
             .feed-item {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            margin-bottom: 40px;
-            background-color: #f8f8f8;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                margin-bottom: 40px;
+                background-color: #f8f8f8;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 1px 4px rgba(0,0,0,0.1);
             }
 
             .feed-thumb {
-            width: 200px;
-            height: 130px;
-            object-fit: cover;
-            border-radius: 8px;
+                width: 200px;
+                height: 130px;
+                object-fit: cover;
+                border-radius: 8px;
             }
 
             .feed-content h3 {
-            margin: 0 0 8px;
+                margin: 0 0 8px;
             }
-            
+
             .meta {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 10px;
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 10px;
             }
 
             .excerpt {
-            margin-bottom: 12px;
-            color: #333;
+                margin-bottom: 12px;
+                color: #333;
             }
 
             .btn-read {
-            text-decoration: none;
-            background-color: #333;
-            color: #fff;
-            padding: 8px 14px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+                text-decoration: none;
+                background-color: #333;
+                color: #fff;
+                padding: 8px 14px;
+                border-radius: 5px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
             }
 
             .btn-read:hover {
-            background-color: #555;
+                background-color: #555;
             }
 
-            /* Responsive */
-            @media (max-width: 768px) {
-            .feed-item {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .feed-thumb {
-                width: 100%;
-                height: auto;
-            }
-
-            .feed-content {
-                text-align: center;
-            }
-
-            /* Submit Cerita-Form */
+            /* Kirim Cerita Form */
             #kirim-cerita {
                 max-width: 700px;
                 margin: 0 auto;
@@ -319,11 +303,11 @@
             }
 
             .form-row.textarea-row {
-                align-items: flex-start;
+                align-items: center;
             }
 
             .form-row.textarea-row label {
-                padding-top: 8px;
+                padding-top: 0;
             }
 
             .form-row.textarea-row textarea {
@@ -346,7 +330,22 @@
                 background-color: #444;
             }
 
+            /* Responsive */
             @media (max-width: 768px) {
+                .feed-item {
+                flex-direction: column;
+                align-items: center;
+                }
+
+                .feed-thumb {
+                width: 100%;
+                height: auto;
+                }
+
+                .feed-content {
+                text-align: center;
+                }
+
                 .form-row {
                 flex-direction: column;
                 align-items: stretch;
@@ -364,7 +363,7 @@
                 width: 100%;
                 }
             }
-            </style>
+        </style>
     </head>
     <body>
         <header id="main-header">
