@@ -1,142 +1,146 @@
-<!DOCTYPE html>
-
+<!DOCTYPE html> 
 <html lang="id">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>4 Elemen</title>
-        <meta name="author" content="4 Elemen by Fajri Mughni" />
-        <meta name="description" content="Awesome Project by Fajri Mughni">
-        <meta name="keywords" content="Project Website for 4Elemen.id">
-        
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 Elemen</title>
+    <meta name="author" content="4 Elemen by Fajri Mughni" />
+    <meta name="description" content="Awesome Project by Fajri Mughni" />
+    <meta name="keywords" content="Project Website for 4Elemen.id" />
 
-        <!-- External CSS -->
-        <link rel="stylesheet" href="asset/css/template.css">
-    </head>
-    <body id="home">
-        <!-- Logo -->
-        <div class="icon-container">
-            <a href="index.html">
-            <img id="logo-index" src="image/asset1.png" alt="4 Elemen Logo" width="250"  class="logo index-logo">
-            </a>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+
+    <!-- CSS Terpadu -->
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+
+  <body id="home">
+    <!-- ========== LOGO ========== -->
+    <div class="icon-container">
+      <a href="index.html">
+        <img src="asset/image/asset1.png" alt="4 Elemen Logo" class="logo index-logo" />
+      </a>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cerita.html">Cerita</a></li>
+        <li><a href="post.html">Kategori Post</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="submit.html">Kirim Ceritamu!</a></li>
+      </ul>
+    </nav>
+
+    <!-- ========== HEADER ========== -->
+    <header id="main-header">
+      <h1>4Elemen.id</h1>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero">
+      <img src="image/hero.jpg" alt="Hero Image" />
+      <div class="hero-content">
+        <h1>Cerita Utama: Judul Cerita 1</h1>
+        <a href="post.html" class="btn-hero">Baca Selengkapnya</a>
+      </div>
+    </section>
+
+    <!-- ========== ARTIKEL LAINNYA ========== -->
+    <section id="artikel-lainnya">
+      <article>
+        <h3>Cerita 2</h3>
+        <small>Posted By Fajri Mughni on August 4th</small>
+        <p>...isi cerita...</p>
+        <a href="post.html">Read More</a>
+      </article>
+
+      <article>
+        <h3>Cerita 3</h3>
+        <small>Posted By Fajri Mughni on August 4th</small>
+        <p>...isi cerita...</p>
+        <a href="post.html">Read More</a>
+      </article>
+
+      <div class="kategori-post-grid">
+        <h3>Kategori Cerita</h3>
+        <div class="kategori-grid">
+          <a href="bumi.html" class="tag-grid bumi">BUMI</a>
+          <a href="angin.html" class="tag-grid angin">ANGIN</a>
+          <a href="api.html" class="tag-grid api">API</a>
+          <a href="air.html" class="tag-grid air">AIR</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEED CERITA ========== -->
+    <section id="feed-cerita">
+      <h2>Cerita Terbaru</h2>
+      <div class="feed-item">
+        <img src="image/thumb1.jpg" alt="Thumbnail Cerita" class="feed-thumb" />
+        <div class="feed-content">
+          <h3>Judul Cerita</h3>
+          <p class="meta">Bandung – 4 Agustus 2025 – Elemen: Air</p>
+          <p class="excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cerita ini mengisahkan...
+          </p>
+          <a href="post.html" class="btn-read">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORM KIRIM CERITA ========== -->
+    <section id="kirim-cerita">
+      <form>
+        <h2>Kirim Cerita</h2>
+
+        <div class="form-row">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" />
         </div>
 
-        <!-- Navbar -->
-        <nav class="navbar">
-            <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cerita.html">Cerita</a></li>
-            <li><a href="post.html">Kategori Post</a></li>
-            <li><a href="tentang.html">Tentang</a></li>
-            <li><a href="submit.html">Kirim Ceritamu!</a></li>
-            </ul>
-        </nav>
-        <header id="main-header">
-            <h1>4Elemen.id</h1>
-        </header>
-
-        <!-- HERO SECTION -->
-        <section id="hero">
-            <img src="image/hero.jpg" alt="Hero Image" />
-            <div class="hero-content">
-                <h1>Cerita Utama: Judul Cerita 1</h1>
-                <a href="post.html" class="btn-hero">Baca Selengkapnya</a>
-            </div>
-        </section>
-
-        <!-- SECTION ARTIKEL -->
-        <section id="artikel-lainnya">
-            <article>
-                <h3>Cerita 2</h3>
-                <small>Posted By Fajri Mughni on August 4th</small>
-                <p>...isi cerita...</p>
-                <a href="post.html">Read More</a>
-            </article>
-
-            <article>
-                <h3>Cerita 3</h3>
-                <small>Posted By Fajri Mughni on August 4th</small>
-                <p>...isi cerita...</p>
-                <a href="post.html">Read More</a>
-            </article>
-        <div class="kategori-post-grid">
-            <h3>Kategori Cerita</h3>
-            <div class="kategori-grid">
-                <a href="bumi.html" class="tag-grid bumi">BUMI</a>
-                <a href="angin.html" class="tag-grid angin">ANGIN</a>
-                <a href="api.html" class="tag-grid api">API</a>
-                <a href="air.html" class="tag-grid air">AIR</a>
-            </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
         </div>
-        </section>
-        <section id="feed-cerita">
-            <h2>Cerita Terbaru</h2>
 
-            <div class="feed-item">
-                <img src="image/thumb1.jpg" alt="Thumbnail Cerita" class="feed-thumb" />
-                <div class="feed-content">
-                <h3>Judul Cerita</h3>
-                <p class="meta">Bandung – 4 Agustus 2025 – Elemen: Air</p>
-                <p class="excerpt">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cerita ini mengisahkan...
-                </p>
-                <a href="post.html" class="btn-read">Baca Selengkapnya</a>
-                </div>
-            </div>
+        <div class="form-row">
+          <label for="gdrive">Link GDrive (opsional)</label>
+          <input type="url" id="gdrive" name="gdrive" placeholder="https://drive.google.com/..." />
+        </div>
 
-        <!-- Duplikat .feed-item untuk cerita lainnya -->
-        </section>
+        <div class="form-row">
+          <label for="kategori">Kategori Cerita</label>
+          <select id="kategori" name="kategori">
+            <option>-- Pilih Kategori --</option>
+            <option>Pribadi</option>
+            <option>Sosial</option>
+            <option>Pekerjaan</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
 
-        <!-- Kirim Cerita -->
-        <section id="kirim-cerita">
-            <form>
-                <h2>Kirim Cerita</h2>
+        <div class="form-row textarea-row">
+          <label for="cerita">Cerita Singkat</label>
+          <textarea id="cerita" name="cerita"></textarea>
+        </div>
 
-                <div class="form-row">
-                <label for="nama">Nama</label>
-                <input type="text" id="nama" name="nama" />
-                </div>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
 
-                <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
-                </div>
-
-                <div class="form-row">
-                <label for="gdrive">Link GDrive (opsional)</label>
-                <input type="url" id="gdrive" name="gdrive" placeholder="https://drive.google.com/..." />
-                </div>
-
-                <div class="form-row">
-                <label for="kategori">Kategori Cerita</label>
-                <select id="kategori" name="kategori">
-                    <option>-- Pilih Kategori --</option>
-                    <option>Pribadi</option>
-                    <option>Sosial</option>
-                    <option>Pekerjaan</option>
-                    <option>Lainnya</option>
-                </select>
-                </div>
-
-                <div class="form-row textarea-row">
-                <label for="cerita">Cerita Singkat</label>
-                <textarea id="cerita" name="cerita"></textarea>
-                </div>
-
-                <button type="submit">Kirim</button>
-            </form>
-        </section>
-        <footer>
-            <div class="footer-links">
-            <a href="tentang.html">Tentang</a>
-            <a href="kontak.html">Kontak</a>
-            <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
-            <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
-            <a href="kebijakan.html">Kebijakan</a>
-            </div>
-            <p>&copy; 2025 4 Elemen – Cerita untuk Semua</p>
-        </footer>
-    </body>
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <div class="footer-links">
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+        <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
+        <a href="kebijakan.html">Kebijakan</a>
+      </div>
+      <p>&copy; 2025 4 Elemen – Cerita untuk Semua</p>
+    </footer>
+  </body>
 </html>

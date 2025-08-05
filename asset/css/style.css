@@ -1,0 +1,364 @@
+/* ====================================================
+   GLOBAL STYLES – Digunakan di semua halaman
+==================================================== */
+body {
+  margin: 40px;
+  font-family: 'Lora', serif;
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ====================================================
+   LOGO (Umum)
+==================================================== */
+.icon-container {
+  text-align: center;
+  margin: 30px 0 10px;
+}
+
+.icon-container img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 100px;
+}
+
+.icon-container img:hover {
+  transform: scale(1.05);
+}
+
+/* ====================================================
+   NAVBAR (Umum)
+==================================================== */
+.navbar {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+/* ====================================================
+   FOOTER (Umum)
+==================================================== */
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #777;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  font-family: 'Lora', serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #0b0b0b;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+footer p {
+  color: #0b0b0b;
+}
+
+/* ====================================================
+   INDEX.HTML KHUSUS
+==================================================== */
+#main-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+  margin: 30px auto 20px;
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* HERO */
+#hero {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto 40px;
+  overflow: hidden;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+.hero-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Artikel Lainnya */
+#artikel-lainnya {
+  padding: 30px 20px;
+  background-color: #fafafa;
+}
+
+#artikel-lainnya article {
+  margin-bottom: 25px;
+}
+
+#artikel-lainnya h3 {
+  margin: 5px 0;
+}
+
+#artikel-lainnya p {
+  margin-bottom: 5px;
+}
+
+/* Kategori Grid */
+.kategori-post-grid {
+  margin-top: 30px;
+}
+
+.kategori-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.kategori-grid .tag-grid {
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: #eee;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.kategori-grid .tag-grid:hover {
+  background-color: #ccc;
+}
+
+/* Feed Cerita */
+#feed-cerita {
+  padding: 30px 20px;
+  background-color: #f0f0f0;
+}
+
+.feed-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+
+.feed-thumb {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.feed-content h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.feed-content .meta {
+  font-size: 12px;
+  color: #777;
+  margin: 4px 0;
+}
+
+.feed-content .excerpt {
+  font-size: 14px;
+  color: #444;
+}
+
+.btn-read {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* ====================================================
+   RESPONSIVE
+==================================================== */
+@media screen and (max-width: 768px) {
+  .feed-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feed-thumb {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+
+/* ====================================================
+   [TENTANG] - tentang.html
+==================================================== */
+/* Tambahkan style khusus halaman tentang jika diperlukan */
+
+/* ====================================================
+   [SUBMIT] - submit.html
+==================================================== */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Lora', serif;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Lora', serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* ====================================================
+   [KEBIJAKAN] - kebijakan.html
+==================================================== */
+.policy-section {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.policy-section h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.policy-section p {
+  margin-bottom: 15px;
+}
