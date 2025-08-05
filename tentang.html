@@ -5,103 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tentang – 4 Elemen</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      margin: 40px;
-      font-family: 'Lora', serif;
-      background-color: #f8f8f8;
-      color: #333;
-      text-align: left;
-    }
-
-    .navbar {
-      background-color: #f8f8f8;
-      padding: 10px 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-
-    .nav-menu {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-menu li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      padding: 8px 12px;
-      transition: background-color 0.3s ease;
-    }
-
-    .nav-menu li a:hover {
-      background-color: #ddd;
-      border-radius: 4px;
-    }
-
-    .icon-container {
-      text-align: center;
-      margin: 30px 0 10px;
-    }
-
-    .icon-container img {
-      cursor: pointer;
-      transition: transform 0.2s ease;
-      width: 100px;
-    }
-
-    .icon-container img:hover {
-      transform: scale(1.05);
-    }
-
-    .about-content {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    footer {
-      background-color: #f8f8f8;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-      color: black;
-      text-align: center;
-      padding: 15px;
-      border-radius: 6px;
-      font-family: 'Lora', serif;
-    }
-  </style>
+  <link rel="stylesheet" href="asset/css/tentang.css">
 </head>
 <body>
 
+  <!-- Logo -->
   <div class="icon-container">
-    <a href="index.html"><img src="image/asset1.png" alt="4 Elemen Logo"></a>
+    <a href="index.html">
+      <img src="image/asset1.png" alt="4 Elemen Logo" id="logo-index">
+    </a>
   </div>
 
+  <!-- Navigasi -->
   <nav class="navbar">
     <ul class="nav-menu">
-      <li><a href="index.html">Beranda</a></li>
-      <li><a href="cerita.html">Cerita</a></li>
-      <li><a href="submit.html">Kirim Cerita</a></li>
-      <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cerita.html">Cerita</a></li>
+        <li><a href="post.html">Kategori Post</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="submit.html">Kirim Ceritamu!</a></li>
     </ul>
   </nav>
 
+  <!-- Konten Tentang -->
   <div class="about-content">
     <h1>Tentang 4 Elemen</h1>
     <p>
@@ -115,15 +41,16 @@
     </p>
   </div>
 
+  <!-- Footer -->
   <footer>
-    <div class="footer-links" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 10px;">
-        <a href="tentang.html" style="color: rgb(11, 11, 11); text-decoration: underline;">Tentang</a>
-        <a href="kontak.html" style="color: rgb(11, 11, 11); text-decoration: underline;">Kontak</a>
-        <a href="https://instagram.com/yourusername" target="_blank" style="color: rgb(11, 11, 11); text-decoration: underline;">Instagram</a>
-        <a href="https://youtube.com/yourchannel" target="_blank" style="color: rgb(11, 11, 11); text-decoration: underline;">YouTube</a>
-        <a href="kebijakan.html" style="color: rgb(11, 11, 11); text-decoration: underline;">Kebijakan</a>
+    <div class="footer-links">
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+      <a href="https://youtube.com/yourchannel" target="_blank">YouTube</a>
+      <a href="kebijakan.html">Kebijakan</a>
     </div>
-    <p style="color:rgb(11, 11, 11);">&copy; 2025 4 Elemen – Cerita untuk Semua</p>
+    <p>&copy; 2025 4 Elemen – Cerita untuk Semua</p>
   </footer>
 
 </body>
