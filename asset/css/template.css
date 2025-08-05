@@ -45,12 +45,12 @@ h2 {
 }
 
 /* ========== KHUSUS INDEX LOGO ========== */
-#logo-index {
+#home #logo-index {
   width: 300px;
 }
 
 @media (max-width: 768px) {
-  #logo-index {
+  #home #logo-index {
     width: 250px;
   }
 }
