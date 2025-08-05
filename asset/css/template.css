@@ -1,4 +1,28 @@
 /* ========== GLOBAL ========== */
+#main-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  font-family: 'Lora', serif;
+}
+
+#main-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+#logo-index {
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  #logo-index {
+    width: 250px;
+  }
+}
+
 body {
   margin: 40px;
   font-family: 'Lora', serif;
