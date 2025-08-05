@@ -96,3 +96,20 @@ footer {
   color: rgb(11, 11, 11);
   text-decoration: underline;
 }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+    margin: 0 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.footer-links a:hover {
+  color: #000;
+}
