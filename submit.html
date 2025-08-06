@@ -5,33 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Kirim cerita tentang elemen Air, Tanah, Api, atau Udara ke situs 4 Elemen. Ceritamu bisa menginspirasi!">
   <title>Kirim Cerita – 4 Elemen</title>
-  <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="asset/image/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
 
-  <!-- Logo -->
+  <!-- 🔰 Logo -->
   <div class="icon-container">
     <a href="index.html">
       <img src="asset/image/asset1.png" alt="Logo 4 Elemen" class="logo">
     </a>
   </div>
 
-  <!-- Navigasi -->
+  <!-- 🧭 Navigasi -->
   <nav class="navbar">
     <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cerita.html">Cerita</a></li>
-        <li><a href="post.html">Kategori Post</a></li>
-        <li><a href="tentang.html">Tentang</a></li>
-        <li><a href="submit.html">Kirim Ceritamu!</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cerita.html">Cerita</a></li>
+      <li><a href="post.html">Kategori Post</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="submit.html">Kirim Ceritamu!</a></li>
     </ul>
   </nav>
 
-  <!-- Form Kirim Cerita -->
+  <!-- ✍️ Form Kirim Cerita -->
   <section id="kirim-cerita">
-    <form action="#" method="POST">
+    <form action="#" method="POST" class="form-style">
       <h2>Kirim Ceritamu</h2>
 
       <div class="form-row">
@@ -46,12 +46,13 @@
 
       <div class="form-row">
         <label for="link">Link GDrive (opsional)</label>
-        <input type="url" id="link" name="link" />
+        <input type="url" id="link" name="link" placeholder="https://drive.google.com/..." />
       </div>
 
       <div class="form-row">
         <label for="kategori">Kategori Cerita</label>
         <select id="kategori" name="kategori">
+          <option disabled selected>-- Pilih Kategori --</option>
           <option>Air</option>
           <option>Tanah</option>
           <option>Api</option>
@@ -64,11 +65,11 @@
         <textarea id="cerita" name="cerita" rows="6" required></textarea>
       </div>
 
-      <button type="submit" class="btn-submit">Kirim</button>
+      <button type="submit">Kirim</button>
     </form>
   </section>
-
-  <!-- Footer -->
+  <br>
+  <!-- 🔻 Footer -->
   <footer>
     <div class="footer-links">
       <a href="tentang.html">Tentang</a>

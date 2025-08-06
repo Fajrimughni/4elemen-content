@@ -1,5 +1,5 @@
 /* ====================================================
-   GLOBAL STYLES – Digunakan di semua halaman
+   🌐 GLOBAL STYLES – Digunakan di semua halaman
 ==================================================== */
 body {
   margin: 40px;
@@ -19,7 +19,7 @@ p {
 }
 
 /* ====================================================
-   LOGO (Umum)
+   🔰 LOGO (Umum)
 ==================================================== */
 .icon-container {
   text-align: center;
@@ -37,7 +37,7 @@ p {
 }
 
 /* ====================================================
-   NAVBAR (Umum)
+   🧭 NAVBAR (Umum)
 ==================================================== */
 .navbar {
   background-color: #f8f8f8;
@@ -70,7 +70,7 @@ p {
 }
 
 /* ====================================================
-   FOOTER (Umum)
+   🔻 FOOTER (Umum)
 ==================================================== */
 footer {
   background-color: #fff;
@@ -80,7 +80,6 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 14px;
-  font-family: 'Lora', serif;
 }
 
 .footer-links {
@@ -102,7 +101,7 @@ footer p {
 }
 
 /* ====================================================
-   INDEX.HTML KHUSUS
+   🏠 INDEX.HTML – Beranda
 ==================================================== */
 #main-header {
   text-align: center;
@@ -111,27 +110,7 @@ footer p {
   margin: 30px auto 20px;
 }
 
-nav {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  padding: 10px 20px;
-  font-family: 'Lora', serif;
-  font-size: 16px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #444;
-  margin: 0 15px;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #007bff;
-}
-
-/* HERO */
+/* HERO Section */
 #hero {
   position: relative;
   max-width: 100%;
@@ -268,46 +247,44 @@ nav a:hover {
 }
 
 /* ====================================================
-   RESPONSIVE
+   📝 POST.HTML – Halaman Cerita
 ==================================================== */
-@media screen and (max-width: 768px) {
-  .feed-item {
-    flex-direction: column;
-    align-items: center;
-  }
+.post-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: 'Lora', serif;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+}
 
-  .feed-thumb {
-    width: 100%;
-    height: auto;
-  }
+.post-content h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #222;
+  text-align: center;
+}
 
-  .hero-content {
-    width: 90%;
-    font-size: 16px;
-  }
+.post-content .meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+  text-align: center;
+}
 
-  nav {
-    flex-direction: column;
-    align-items: center;
-    font-size: 15px;
-  }
+.post-content p {
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 /* ====================================================
-   [TENTANG] - tentang.html
+   ✍️ SUBMIT.HTML – Formulir Kirim Cerita
 ==================================================== */
-/* Tambahkan style khusus halaman tentang jika diperlukan */
-
-/* ====================================================
-   [SUBMIT] - submit.html
-==================================================== */
-form {
+.form-style {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 30px 0;
 }
 
 label {
@@ -318,13 +295,20 @@ label {
 
 input[type="text"],
 input[type="email"],
-textarea {
+input[type="url"],
+textarea,
+select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-family: 'Lora', serif;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 button {
@@ -342,15 +326,12 @@ button:hover {
 }
 
 /* ====================================================
-   [KEBIJAKAN] - kebijakan.html
+   📜 KEBIJAKAN.HTML – Kebijakan Privasi
 ==================================================== */
 .policy-section {
   max-width: 800px;
-  margin: auto;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
 .policy-section h2 {
@@ -361,4 +342,58 @@ button:hover {
 
 .policy-section p {
   margin-bottom: 15px;
+}
+
+/* ====================================================
+   📱 RESPONSIVE DESIGN
+==================================================== */
+@media screen and (max-width: 768px) {
+  .form-style {
+    padding: 20px 10px;
+  }
+
+  #hero {
+    position: relative;
+  }
+
+  .hero-content {
+    bottom: 10px;
+    font-size: 14px;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 18px;
+  }
+
+  .btn-hero {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .feed-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feed-thumb {
+    width: 100%;
+    height: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .post-content {
+    padding: 30px 15px;
+    font-size: 15px;
+  }
+
+  .post-content h1 {
+    font-size: 22px;
+  }
 }
